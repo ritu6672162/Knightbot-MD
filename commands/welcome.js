@@ -9,7 +9,7 @@ async function welcomeCommand(sock, chatId, message, match) {
 
     // Extract match from message
     const text = message.message?.conversation || 
-                message.message?.extendedTextMessage?.text || '';
+                message.message?.extendedTextMessage?.text || '🦋 🇼𝐄𝐋𝐂𝐎𝐌𝐄 🦋 এতদিন কোথায় ছিলে পথ ভুলে তুমি কি এলে🥺👀🫂';
     const matchText = text.split(' ').slice(1).join(' ');
 
     await handleWelcome(sock, chatId, message, matchText);
